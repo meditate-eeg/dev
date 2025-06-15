@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Часті запитання (FAQ)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../faq-style.css">
+  <link rel="stylesheet" href="faq-style.css">
 </head>
 <body>
   <h1>Часті запитання (FAQ)</h1>
@@ -12,40 +12,38 @@
   <div class="faq-item">
     <button class="faq-question">Чи може додаток читати мої думки?</button>
     <div class="faq-answer">
-      <p>Ні. Гарнітура зчитує лише електричну активність мозку (EEG), але не зміст думок.</p>
+      Ні. Гарнітура зчитує лише електричну активність мозку (EEG), але не зміст думок.
     </div>
   </div>
 
   <div class="faq-item">
     <button class="faq-question">Чи зберігаються мої дані на сервері?</button>
     <div class="faq-answer">
-      <p>Дані зберігаються лише локально на вашому пристрої, якщо ви не ввімкнули синхронізацію.</p>
+      Дані зберігаються лише локально на вашому пристрої, якщо ви не ввімкнули синхронізацію.
     </div>
   </div>
 
   <div class="faq-item">
     <button class="faq-question">Як підключити нейрогарнітуру?</button>
     <div class="faq-answer">
-      <p>Увімкніть Bluetooth, активуйте гарнітуру, оберіть її в списку пристроїв і підтвердьте підключення в додатку.</p>
+      Увімкніть Bluetooth, активуйте гарнітуру, оберіть її в списку пристроїв і підтвердьте підключення в додатку.
     </div>
   </div>
 
   <script>
     const questions = document.querySelectorAll('.faq-question');
 
-    questions.forEach((btn) => {
+    questions.forEach(btn => {
       btn.addEventListener('click', () => {
-        const parent = btn.parentElement;
+        const item = btn.parentElement;
 
-        // Згортаємо всі відкриті відповіді
-        document.querySelectorAll('.faq-item').forEach(item => {
-          if (item !== parent) {
-            item.classList.remove('open');
-          }
+        // Закрити всі інші
+        document.querySelectorAll('.faq-item').forEach(i => {
+          if (i !== item) i.classList.remove('open');
         });
 
-        // Перемикаємо поточне
-        parent.classList.toggle('open');
+        // Перемкнути поточне
+        item.classList.toggle('open');
       });
     });
   </script>
