@@ -38,5 +38,5 @@ h2 {
 }
 
 .faq-item.open .faq-answer {
-  max-height: 500px; /* Достатньо для середньої відповіді */
+  max-height: 500px; /* одне значення для всіх */
 }
