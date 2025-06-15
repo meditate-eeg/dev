@@ -25,7 +25,7 @@ h1 {
   text-align: left;
   width: 100%;
   cursor: pointer;
-  padding: 0.55rem 0; /* досить для комфортного кліку */
+  padding: 0.25rem 0; /* досить для комфортного кліку */
   color: #2c3e50;
 }
 
