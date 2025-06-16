@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Часті запитання (FAQ) DE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="faq-style.css">
+</head>
+<body>
+  <h1>Часті запитання (FAQ)</h1>
+
+<div class="faq-item">
+  <button class="faq-question">Чи може додаток читати мої думки?</button>
+  <div class="faq-answer">
+    <p>Ні. Гарнітура зчитує лише електричну активність мозку (EEG), але не зміст думок.</p>
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">Чи зберігаються мої дані на сервері?</button>
+  <div class="faq-answer">
+    <p>Дані зберігаються лише локально на вашому пристрої.</p>
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">Чи може хтось отримати доступ до моїх мозкових хвиль?</button>
+  <div class="faq-answer">
+    <p>Ні. Дані зберігаються лише локально на вашому пристрої.</p>
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">Чи безпечно використовувати додаток щодня?</button>
+  <div class="faq-answer">
+    <p>Так, додаток і гарнітура безпечні для щоденного використання. Вони лише зчитують сигнал, не впливаючи на мозок.</p>
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">Як дізнатись, що гарнітура працює правильно?</button>
+  <div class="faq-answer">
+    <p>Якщо сигналу немає, індикатор у верхньому лівому куті буде червоним, а кнопка «Пуск» неактивна. Коли з’явиться сигнал, індикатор стане жовтим, а потім зеленим. Зелений колір означає, що сигнал хороший — з’явиться цифровий рівень сигналу, і кнопка «Пуск» стане активною.</p>
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">Що означають графіки мозкової активності?</button>
+  <div class="faq-answer">
+    <p>Це показник глибини медитації, який розраховується на основі мозкової активності за допомогою спеціальної формули. Якщо рівень понад 80 — це вважається хорошою медитацією (стан Шаматхи). Чим вища лінія на графіку, тим глибше ви перебуваєте в медитативному стані.</p>
+  </div>
+</div>
+
+<div class="faq-item">
+  <button class="faq-question">Чому іноді гарнітура не показує мозкову активність?</button>
+  <div class="faq-answer">
+    <p>Це може траплятися, якщо контакт гарнітури зі шкірою слабкий. Перед кожною сесією варто протерти шкіру і електроди спиртовою серветкою для кращого зчитування сигналу.</p>
+  </div>
+</div>
+
+
+  <script>
+    const questions = document.querySelectorAll('.faq-question');
+
+    questions.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+
+        // Закрити всі інші
+        document.querySelectorAll('.faq-item').forEach(i => {
+          if (i !== item) i.classList.remove('open');
+        });
+
+        // Перемкнути поточне
+        item.classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>
