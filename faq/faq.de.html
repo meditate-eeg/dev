@@ -67,12 +67,10 @@
       btn.addEventListener('click', () => {
         const item = btn.parentElement;
 
-        // Закрити всі інші
         document.querySelectorAll('.faq-item').forEach(i => {
           if (i !== item) i.classList.remove('open');
         });
 
-        // Перемкнути поточне
         item.classList.toggle('open');
       });
     });
