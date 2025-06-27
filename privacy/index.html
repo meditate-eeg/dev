@@ -97,13 +97,18 @@
         
         <p><strong><em>This summary provides key points from our Privacy Notice, but you can find out more details about any of these topics by clicking the link following each key point or by using our <a href="#toc">table of contents</a> below to find the section you are looking for.</em></strong></p>
         
-        <p><strong>What personal information do we process?</strong> We do not collect, store, or transmit any personal data. No analytics, crash logs, or identifiers are sent to our servers. Learn more about <a href="#personalinfo">personal information you disclose to us</a>.</p>
+        <p><strong>What personal information do we process?</strong> We collect only minimal technical information for trial protection and promotional features. No personally identifiable information is collected.</p>
         
         <p><strong>Do we process any sensitive personal information?</strong> Some of the information may be considered "special" or "sensitive" in certain jurisdictions, for example your racial or ethnic origins, sexual orientation, and religious beliefs. We do not process sensitive personal information.</p>
         
         <p><strong>Do we collect any information from third parties?</strong> We do not collect any information from third parties.</p>
         
-        <p><strong>How do we process your information?</strong> At present, the app does not process any personal information because none is collected or transmitted. See <a href="#infouse">Section 2</a> for details.</p>
+        <p><strong>How do we process your information?</strong> We process the minimal technical information mentioned above for the following purposes:</p>
+        <ul>
+            <li><strong>Trial Protection:</strong> To ensure fair usage of our 14-day free trial by preventing multiple trial activations on the same device.</li>
+            <li><strong>Promotional System:</strong> To validate promotional codes and enforce usage limits for marketing campaigns.</li>
+        </ul>
+        <p>All other app functionality, including meditation sessions and user preferences, operates entirely offline on your device.</p>
         
         <p><strong>In what situations do we share personal information?</strong> We do <em>not</em> share any personal information because none is collected. See <a href="#whoshare">Section 4</a> for details.</p>
         
@@ -122,6 +127,7 @@
         <a href="#legalbases">3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?</a>
         <a href="#whoshare">4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</a>
         <a href="#cookies">5. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</a>
+        <a href="#firebase">5.1. FIREBASE SERVICES</a>
         <a href="#inforetain">6. HOW LONG DO WE KEEP YOUR INFORMATION?</a>
         <a href="#infominors">7. DO WE COLLECT INFORMATION FROM MINORS?</a>
         <a href="#privacyrights">8. WHAT ARE YOUR PRIVACY RIGHTS?</a>
@@ -141,9 +147,26 @@
         
         <h3 id="personalinfo">Personal information you disclose to us</h3>
         
-        <p><strong><em>In Short: We do not collect or process any personal information.</em></strong></p>
+        <p><strong><em>In Short: We collect only minimal technical information for trial protection and promotional features.</em></strong></p>
         
-        <p>The MeditateEEG app operates entirely offline and does not collect, store, or transmit any personal information to our servers. All meditation sessions, preferences, and data remain stored locally on your device only.</p>
+        <p>The MeditateEEG app primarily operates offline. However, for specific features, we collect minimal technical information:</p>
+
+        <p><strong>Technical Information for App Features:</strong></p>
+        <ul>
+            <li><strong>Device Identifier (Hashed):</strong> We create an anonymous, hashed identifier based on your device characteristics (Android ID, device model, and screen resolution). This hash is irreversible and cannot be traced back to your specific device or personal information. We use this solely to manage the 14-day free trial period and prevent abuse.</li>
+            <li><strong>Trial Usage Data:</strong> When you activate the free trial, we store: the hashed device identifier, trial activation status, first usage date, and app version. This prevents unlimited trial reactivations.</li>
+            <li><strong>Promotional Code Usage:</strong> If you use a promotional code, we track the code usage count to enforce usage limits. No personal information is linked to promotional code usage.</li>
+        </ul>
+
+        <p><strong>What We Do NOT Collect:</strong></p>
+        <ul>
+            <li>Your actual Android ID or any personally identifiable information</li>
+            <li>Meditation session data or EEG readings</li>
+            <li>User preferences or settings</li>
+            <li>Location data</li>
+            <li>Contact information (email, phone, name)</li>
+            <li>Analytics or crash reports</li>
+        </ul>
         
         <p><strong>Sensitive Information.</strong> We do not process sensitive information.</p>
         
@@ -167,23 +190,32 @@
     <div id="infouse" class="section">
         <h2>2. HOW DO WE PROCESS YOUR INFORMATION?</h2>
         
-        <p><strong><em>In Short: We do not process any personal information.</em></strong></p>
+        <p><strong><em>In Short: We process your information based on legitimate interests and performance of contract.</em></strong></p>
         
-        <p>The MeditateEEG app operates entirely offline and does not process, collect, or transmit any personal information to our servers. All app functionality, including meditation sessions and user preferences, is handled locally on your device.</p>
+        <p>We process the minimal technical information based on:</p>
+        <ul>
+            <li><strong>Legitimate Interests:</strong> To protect our business from trial abuse and ensure fair access to our free trial for all users.</li>
+            <li><strong>Performance of Contract:</strong> To provide promotional benefits when you use valid promotional codes.</li>
+        </ul>
+        <p>All other app functionality, including meditation sessions and user preferences, operates entirely offline on your device.</p>
     </div>
 
     <div id="legalbases" class="section">
         <h2>3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?</h2>
         
-        <p><strong><em>In Short: We do not process personal information, so no legal bases are required.</em></strong></p>
+        <p><strong><em>In Short: We process your information based on legitimate interests and performance of contract.</em></strong></p>
         
-        <p>Since the MeditateEEG app does not collect, store, or process any personal information, we do not rely on any legal bases for personal data processing. All app functionality operates locally on your device without any data transmission to our servers.</p>
+        <p>We process the minimal technical information based on:</p>
+        <ul>
+            <li><strong>Legitimate Interests:</strong> To protect our business from trial abuse and ensure fair access to our free trial for all users.</li>
+            <li><strong>Performance of Contract:</strong> To provide promotional benefits when you use valid promotional codes.</li>
+        </ul>
     </div>
 
     <div id="whoshare" class="section">
         <h2>4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</h2>
         
-        <p><strong><em>In Short: We do not share any personal information because none is collected.</em></strong></p>
+        <p><strong><em>In Short: We do not share personal information with third parties. The minimal technical data we collect is stored securely in Google Firebase and is not shared with any other parties.</em></strong></p>
     </div>
 
     <div id="cookies" class="section">
@@ -192,12 +224,32 @@
         <p>The MeditateEEG app operates entirely offline and does not make network requests that would store or retrieve HTTP cookies, pixels, or similar tracking technologies. If we introduce online features in a future version that require cookies, this Privacy Policy will be updated before such features are released.</p>
     </div>
 
+    <div id="firebase" class="section">
+        <h2>5.1. FIREBASE SERVICES</h2>
+        
+        <p><strong><em>In Short: We use Google Firebase for minimal technical features only.</em></strong></p>
+        
+        <p>We use Google Firebase services for:</p>
+        <ul>
+            <li><strong>Cloud Firestore:</strong> To store hashed device identifiers for trial protection and promotional code validation</li>
+            <li><strong>No Firebase Analytics:</strong> We do NOT use Firebase Analytics or any tracking services</li>
+            <li><strong>No Crashlytics:</strong> We do NOT collect crash reports or performance data</li>
+        </ul>
+        
+        <p>Firebase processes this data according to <a href="https://firebase.google.com/support/privacy" target="_blank">Google's Privacy Policy</a>. The data is stored on Google's secure servers.</p>
+    </div>
+
     <div id="inforetain" class="section">
         <h2>6. HOW LONG DO WE KEEP YOUR INFORMATION?</h2>
         
-        <p><strong><em>In Short: We do not retain any personal data on our servers.</em></strong></p>
+        <p><strong><em>In Short: We retain the minimal technical information as follows:</em></strong></p>
         
-        <p>Since the MeditateEEG app does not collect or transmit any personal information to our servers, we do not retain any personal data. All user data, including meditation session records and preferences, remains stored locally on your device and is under your complete control.</p>
+        <p>We retain the minimal technical information as follows:</p>
+        <ul>
+            <li><strong>Trial Usage Data:</strong> Retained indefinitely to prevent trial abuse. Since this is only a hashed identifier with no personal information, there is minimal privacy impact.</li>
+            <li><strong>Promotional Code Data:</strong> Usage counts are retained as long as the promotional campaign is active. No personal information is stored with promotional code usage.</li>
+        </ul>
+        <p>All meditation session data and preferences remain on your device under your control.</p>
     </div>
 
     <div id="infominors" class="section">
@@ -246,6 +298,8 @@
         <h2>14. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</h2>
         
         <p>Based on the applicable laws of your country or state of residence in the US, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. To request to review, update, or delete your personal information, please fill out and submit a <a href="https://app.termly.io/notify/7710a1f7-bbee-44f8-b466-a56d231aae14" target="_blank">data subject access request</a>.</p>
+
+        <p>Since we only store a hashed device identifier for trial protection, you can request deletion of this data by contacting us at meditate.eeg@gmail.com with your device information. Please note that after deletion, you will not be able to use the free trial again on the same device.</p>
     </div>
 
     <div id="payments-and-subscriptions" class="section">
